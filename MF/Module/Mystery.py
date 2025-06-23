@@ -1,5 +1,5 @@
 """Mystery.py"""
-#Framework Basics
+#Framework Basics Class
 
 class Framework:   
 
