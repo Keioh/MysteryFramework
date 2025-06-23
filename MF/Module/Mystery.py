@@ -12,6 +12,6 @@ class Framework:
     def Start(self):
         return 0
 
-    #毎フレーム実行(未実装)
+    #毎フレーム実行(returnが0以外ならループする)
     def Update(self):
         return 0
