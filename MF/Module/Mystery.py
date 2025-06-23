@@ -1,7 +1,12 @@
 """Mystery.py"""
 #Framework Basics Class
 
-class Framework:   
+from Module import FileIO
+
+class Framework():
+
+    #簡単なファイルIO関係
+    EasyFileIO = FileIO.EasyFileIO()
 
     #-------------------------------------------------------------------
     #コンストラクタ
