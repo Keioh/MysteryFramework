@@ -4,7 +4,7 @@ from Module import Mystery
 
 #MainClass
 class MysteryFramework(Mystery.Framework):
-
+    
     #フレームワーク実行時に一回だけ最初に実行
     def Start(self):
         return 0
