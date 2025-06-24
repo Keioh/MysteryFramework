@@ -8,5 +8,5 @@ App.pyのMysteryFrameworkクラス内でselfから各種機能にアクセス可
 App.pyの関数内でselfで参照時
 EasyFileIO ---> 簡易化したファイル入出力機能
 
-selfから以外
+self以外から
 Mystery.LoopErr.Code ---> ループするためのフラグとエラーコード
