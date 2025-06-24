@@ -17,9 +17,9 @@ class Framework():
     def Start(self):
         return 0
 
-    #毎フレーム実行(returnが0以外ならループする)
+    #毎フレーム実行(returnがLoopErr.Code.Loopingならループする)
     def Update(self):
-        return 0
+        return self.Exit()
     
     #-------------------------------------------------------------------
 
