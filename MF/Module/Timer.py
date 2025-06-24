@@ -13,6 +13,7 @@ class Timer:
     #カウントの開始と終了の差
     isTime = 0.0
 
+
     #時間計測の開始
     def StartTimer(self):
         self.startTime = time.time()
