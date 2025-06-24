@@ -23,6 +23,6 @@ class Framework():
     
     #-------------------------------------------------------------------
 
-    #ループエラーの確認
+    #ループエラーの確認とループフラグ
     def Exit(self, loopCode = LoopErr.Code.Looping):
         return loopCode
