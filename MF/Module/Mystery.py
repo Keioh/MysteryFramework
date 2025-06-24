@@ -2,11 +2,15 @@
 #Framework Basics Class
 from Module import FileIO
 from Module import LoopErr
+from Module import Time
 
 class Framework():
 
     #簡単なファイルIO関係
     EasyFileIO = FileIO.EasyFileIO()
+
+    #時間計測関係
+    Time = Time.Timer()
 
     #-------------------------------------------------------------------
     #コンストラクタ
