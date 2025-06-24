@@ -1,7 +1,7 @@
 """Mystery.py"""
 #Framework Basics Class
-
 from Module import FileIO
+from Module import LoopErr
 
 class Framework():
 
@@ -20,3 +20,9 @@ class Framework():
     #毎フレーム実行(returnが0以外ならループする)
     def Update(self):
         return 0
+    
+    #-------------------------------------------------------------------
+
+    #ループエラーの確認
+    def Exit(self, loopCode = LoopErr.Code.Looping):
+        return loopCode

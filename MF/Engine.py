@@ -7,5 +7,5 @@ MF = App.MysteryFramework()
 MF.Start()
 
 #ループ処理
-while MF.Update() != 0:
+while MF.Update() == App.Mystery.LoopErr.Code.Looping:
     MF.Update()
