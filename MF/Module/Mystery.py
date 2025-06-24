@@ -10,7 +10,7 @@ class Framework():
     EasyFileIO = FileIO.EasyFileIO()
 
     #時間計測関係
-    Time = Timer.Timer()
+    Timer = Timer.Timer()
 
     #-------------------------------------------------------------------
     #コンストラクタ
