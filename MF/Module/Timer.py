@@ -1,6 +1,7 @@
-"""Time.py"""
+"""Timer.py"""
 
 import time
+import datetime
 
 class Timer:
 
@@ -26,3 +27,7 @@ class Timer:
     def GetTimer(self):
         self.isTime = self.endTime - self.startTime
         return self.isTime
+    
+    #今日の日付を取得する
+    def GetToDay(self):
+        return datetime.date.today()

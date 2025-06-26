@@ -16,7 +16,7 @@ class EasyFileIO:
     #リストに纏めた文字列をファイルに書き込む
     def EasyOpenWrite(self, filePath, lineList):
 
-        file = open(filePath, mode = "w")
+        file = open(filePath, "w")
 
         file.writelines(lineList)
 
