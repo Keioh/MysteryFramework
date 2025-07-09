@@ -4,6 +4,9 @@ from Module import FileIO
 from Module import LoopErr
 from Module import Timer
 
+#競馬データ計算
+from Module.HorseRacing import horseRacing
+
 class Framework():
 
     #簡単なファイルIO関係
@@ -11,6 +14,9 @@ class Framework():
 
     #時間計測関係
     Timer = Timer.Timer()
+
+    #競馬データ整理関係
+    HorseRacingData = horseRacing.HorseRacingData()
 
     #-------------------------------------------------------------------
     #コンストラクタ
