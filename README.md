@@ -1,4 +1,4 @@
-# MysteryFramework
+# MysteryFramework(MF)
 python3を用いた簡単なフレームワーク
 
 App.pyに処理を書いて、Engine.pyで実行
@@ -7,14 +7,14 @@ App.pyのMysteryFrameworkクラス内でselfから各種機能にアクセス可
 
 # ファイル構成
     MysteryFramework
-    |-- App.py #実処理を書くファイルまたは、継承する
+    |-- App.py #実処理を書くファイル
     |-- Engine.py #pythonで実行するファイル
     |
     |-- Module
        |-- __init__.py
        |-- FileIO.py #ファイル入出力の簡易化機能群
        |-- Looperr.py #MysteryFrameworkにおけるループした際のエラーコードの定義
-       |-- Mystery.py #MysteryFrameworkの統括Class
+       |-- Mystery.py #MysteryFrameworkの統括Class、MFの機能を使いたい場合はこのファイルを継承する
        |-- Timer.py #タイマー機能群
        | 
        |-- HorseRacing
