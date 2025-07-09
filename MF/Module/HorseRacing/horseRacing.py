@@ -12,15 +12,17 @@ class HorseRacingData:
     lines = []
 
     #検索単語の指定と検索
-    def AttributeInformation(self, *textLine:str):
+    def AttributeInformation(self, textLine:str):
 
         #line変数に対するstr明示宣言
         line:str
 
-        for line in range(len(textLine)):
+        for line in textLine:
 
-            self.words.append(line)
+            #単語群をリストに追加
+            self.words.append(line.split(','))
 
-            self.lines.append(self.words)
+        #単語群を一行リストに追加
+        self.lines.append(self.words)
 
         return self.lines

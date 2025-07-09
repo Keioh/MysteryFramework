@@ -6,10 +6,10 @@ class EasyFileIO:
     def EasyOpenRead(self, filePath):
         
         #取得した全てのテキストデータ
-        textLineData = []
+        textLineData:str = []
 
         #取得した一行のテキストデータ
-        line = []
+        line:str = []
 
         #ファイルの読み込み
         file = open(filePath, encoding="utf-8")
@@ -30,9 +30,8 @@ class EasyFileIO:
     #リストに纏めた文字列をファイルに書き込む
     def EasyOpenWrite(self, filePath, lineList:str):
 
-        file = open(filePath, "w", encoding="utf-8")
+        f = open(filePath, "w", encoding="utf-8")
 
-        file.writelines(lineList)
-        #file.write(lineList)
+        print(lineList, file= f)
 
-        file.close()
+        f.close()

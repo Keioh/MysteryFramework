@@ -5,22 +5,22 @@ from Module import Mystery
 #MainClass
 class MysteryFramework(Mystery.Framework):
 
-    textData =[[]]
+    textData:str =[[]]
 
     #フレームワーク実行時に一回だけ最初に実行
     def Start(self):
 
         #テキストを一行づつ格納するリスト
-        textLine = []
+        textLine:str = []
 
         #ファイル読み込み
         textLine = self.EasyFileIO.EasyOpenRead(r"G:\\競馬AI\\データ抽出１０００件くらい修正版.txt")        
 
         #テキストを分割したデータを抽出
-        textData = self.HorseRacingData.AttributeInformation(textLine)
+        self.textData = self.HorseRacingData.AttributeInformation(textLine)
 
         #ファイル出力
-        self.EasyFileIO.EasyOpenWrite(r"G:\\競馬AI\\TEST.txt",textData)
+        self.EasyFileIO.EasyOpenWrite(r"G:\\競馬AI\\TEST.txt",self.textData[0][1])
 
         return 0
 
