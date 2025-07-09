@@ -7,7 +7,7 @@ App.pyのMysteryFrameworkクラス内でselfから各種機能にアクセス可
 
 # ファイル構成
     MysteryFramework
-    |-- App.py #実処理を書くファイル
+    |-- App.py #実処理を書くファイルまたは、継承する
     |-- Engine.py #pythonで実行するファイル
     |
     |-- Module

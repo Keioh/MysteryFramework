@@ -5,6 +5,7 @@ from Module import Mystery
 #MainClass
 class MysteryFramework(Mystery.Framework):
 
+    #テキストデータ
     textData:str =[[]]
 
     #フレームワーク実行時に一回だけ最初に実行
