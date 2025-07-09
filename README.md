@@ -5,9 +5,19 @@ App.pyに処理を書いて、Engine.pyで実行
 
 App.pyのMysteryFrameworkクラス内でselfから各種機能にアクセス可能
 
-App.pyの関数内でselfで参照時
-EasyFileIO ---> 簡易化したファイル入出力機能
-Timer ---> 簡易的な時間計測機能
+# ファイル構成
+MysteryFramework
+    App.py #実処理を書くファイル
+    Engine.py #pythonで実行するファイル
+    
+    Module
+        __init__.py
+        FileIO.py #ファイル入出力の簡易化機能群
+        Looperr.py #MysteryFrameworkにおけるループした際のエラーコードの定義
+        Mystery.py #MysteryFrameworkの統括Class
+        Timer.py #タイマー機能群
 
-self以外から
-Mystery.LoopErr.Code ---> ループするためのフラグとエラーコード
+        HorseRacing
+            __init__.py
+            horseRacing.py #抽出データの生成と管理
+            horseRaingDataMining.py #未実装
