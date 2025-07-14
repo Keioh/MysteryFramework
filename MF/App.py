@@ -15,13 +15,13 @@ class MysteryFramework(Mystery.Framework):
         textLine:str = []
 
         #ファイル読み込み
-        textLine = self.EasyFileIO.EasyOpenRead(r"G:\\競馬AI\\データ抽出１０００件くらい修正版.txt")        
+        textLine = self.EasyFileIO.EasyOpenRead("G:\\競馬AI\\データ抽出１０００件くらい修正版.txt")      
 
         #テキストを分割したデータを抽出
         self.textData = self.HorseRacingData.AttributeInformation(textLine)
 
         #ファイル出力
-        self.EasyFileIO.EasyOpenWrite(r"G:\\競馬AI\\TEST.txt",self.textData[0][1])
+        self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",self.textData[0][1])
 
         return 0
 

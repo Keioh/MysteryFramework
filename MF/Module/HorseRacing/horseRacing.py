@@ -1,7 +1,8 @@
 """horseRacing.py"""
 #競馬データ整理
 
-import re
+#競馬データコード
+from Module.HorseRacing import houseRaingEnum
 
 class HorseRacingData:
 
