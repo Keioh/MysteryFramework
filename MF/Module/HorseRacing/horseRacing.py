@@ -27,3 +27,26 @@ class HorseRacingData:
         self.lines.append(self.words)
 
         return self.lines
+    
+    #検索するワードを指定して、その回数を計測する
+    def SearchPair(self, searchWord:str):
+
+        #ディクショナリーを宣言
+        dataDict = {}
+
+        wordCount = 0
+
+        line:str
+        word:str
+
+        #3重for、改善の余地あり
+        for line in self.lines:
+            for word in  line:
+                for data in word:
+
+                    if data.find(searchWord) != -1:
+                        wordCount += 1
+
+        dataDict[searchWord] = wordCount
+
+        return dataDict
