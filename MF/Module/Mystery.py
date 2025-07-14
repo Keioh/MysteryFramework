@@ -20,7 +20,7 @@ class Framework():
     Timer = Timer.Timer()
 
     #競馬データ整理関係
-    HouseRaingDatacode = houseRaingEnum.HouseRaingDataCode #Enum
+    HouseRaingDataCode = houseRaingEnum.HouseRaingDataCode #Enum
     HorseRacingData = horseRacing.HorseRacingData() #実データ処理関係
 
     #GUI関係

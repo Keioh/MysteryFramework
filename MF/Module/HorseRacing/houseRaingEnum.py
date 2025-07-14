@@ -1,9 +1,9 @@
 """houseRaingEnum.py"""
 
-from enum import Enum
+from enum import IntEnum
 
 #競馬データコード
-class HouseRaingDataCode(Enum):
+class HouseRaingDataCode(IntEnum):
     race_id = 0
     place = 1
     distance = 2

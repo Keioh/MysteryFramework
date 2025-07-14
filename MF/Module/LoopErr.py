@@ -1,9 +1,9 @@
 """Enum.py"""
 
-from enum import Enum
+from enum import IntEnum
 
 #ループコード
-class Code(Enum):
+class Code(IntEnum):
     LoopingErr = -1
     Looping = 0
     UnLooping = 1

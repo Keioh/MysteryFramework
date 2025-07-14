@@ -12,7 +12,7 @@ class HorseRacingData:
     #一行中に分割された単語群を纏めたもの
     lines = []
 
-    #検索単語の指定と検索
+    #検索単語の指定と検索(return → textLines:str = [テキストブロックの指定=0][ブロック内の行の指定][行内のワードを指定])
     def AttributeInformation(self, textLine:str):
 
         #line変数に対するstr明示宣言

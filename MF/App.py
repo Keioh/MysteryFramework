@@ -21,7 +21,7 @@ class MysteryFramework(Mystery.Framework):
         self.textData = self.HorseRacingData.AttributeInformation(textLine)
 
         #ファイル出力
-        self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",self.textData[0][1])
+        self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",self.textData[0][1][Mystery.Framework.HouseRaingDataCode.jockey])
 
         return 0
 
