@@ -9,7 +9,8 @@ from Module.GUI import MFGUI
 
 #競馬データ計算
 from Module.HorseRacing import horseRacing
-from Module.HorseRacing import houseRaingEnum
+from Module.HorseRacing import horseRacingDataMining
+from Module.HorseRacing import horseRaingEnum
 
 class Framework():
 
@@ -20,8 +21,9 @@ class Framework():
     Timer = Timer.Timer()
 
     #競馬データ整理関係
-    HouseRaingDataCode = houseRaingEnum.HouseRaingDataCode #Enum
-    HorseRacingData = horseRacing.HorseRacingData() #実データ処理関係
+    HouseRaingDataCode = horseRaingEnum.HorseRaingDataCode #Enum
+    HourseRacingData = horseRacing.HorseRacingData() #実データ処理関係
+    HourseRacingDataMining = horseRacingDataMining.HorseRacingDataMining()#ウェブサイト取得とデータマイニング関係
 
     #GUI関係
     MysteryGUI = MFGUI.MysteryGUI()

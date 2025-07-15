@@ -2,7 +2,7 @@
 #競馬データ整理
 
 #競馬データコード
-from Module.HorseRacing import houseRaingEnum
+from Module.HorseRacing import horseRaingEnum
 
 class HorseRacingData:
 

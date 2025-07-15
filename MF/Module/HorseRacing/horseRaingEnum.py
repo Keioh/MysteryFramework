@@ -1,10 +1,10 @@
-"""houseRaingEnum.py"""
+"""horseRaingEnum.py"""
 
 from enum import IntEnum
 from enum import auto
 
 #競馬データコード
-class HouseRaingDataCode(IntEnum):
+class HorseRaingDataCode(IntEnum):
     race_id = 0
     place = auto()
     distance = auto()
