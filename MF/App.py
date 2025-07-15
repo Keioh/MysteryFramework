@@ -27,7 +27,7 @@ class MysteryFramework(Mystery.Framework):
 
         #ファイル出力
         #self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",self.textData[0][1][Mystery.Framework.HouseRaingDataCode.jockey])
-        self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",detaCount)       
+        self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",detaCount)
 
         return 0
 

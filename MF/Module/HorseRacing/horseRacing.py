@@ -34,6 +34,7 @@ class HorseRacingData:
         #ディクショナリーを宣言
         dataDict = {}
 
+        #同じ単語のカウント
         wordCount = 0
 
         line:str
@@ -50,3 +51,7 @@ class HorseRacingData:
         dataDict[searchWord] = wordCount
 
         return dataDict
+    
+    #全てのデータ上の単語ごとにカウントを自動で行う
+    def AutoAllCounting(self):
+        return 0
