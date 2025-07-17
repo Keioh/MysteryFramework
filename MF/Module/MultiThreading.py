@@ -7,6 +7,6 @@ class MysteryThreading:
 
         thread = concurrent.futures.ThreadPoolExecutor(bootingThreadValu)
         
-        print("Thread is Booting COMPLATE! : [", bootingThreadValu, "] Threads")
+        print("Thread is Booting COMPLETE! : [", bootingThreadValu, "] Threads")
 
         return thread
