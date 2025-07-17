@@ -8,7 +8,7 @@ from Module import Timer
 from Module.GUI import MFGUI
 
 #マルチスレッド関係
-from Module.MultiThreading import MysteryThreading
+from Module import MultiThreading
 
 #競馬データ計算
 from Module.HorseRacing import horseRacing
@@ -24,7 +24,7 @@ class Framework():
     Timer = Timer.Timer()
 
     #マルチスレッド関係
-    MysteryThread = MysteryThreading()
+    MysteryThread = MultiThreading.MysteryThreading()
 
     #競馬データ整理関係
     HouseRaingDataCode = horseRaingEnum.HorseRaingDataCode #Enum
