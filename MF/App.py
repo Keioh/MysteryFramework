@@ -13,7 +13,7 @@ class MysteryFramework(Mystery.Framework):
         
         #self.MysteryThread.Create(4)
 
-        #html = self.HourseRacingDataMining.GetWebSite(r"https://db.netkeiba.com/race/201406040806/")
+        html = self.HourseRacingDataMining.GetWebSite(r"https://db.netkeiba.com/race/201406040806/")
         
         #テキストを一行づつ格納するリスト
         textLine:str = []
@@ -31,7 +31,7 @@ class MysteryFramework(Mystery.Framework):
 
         #ファイル出力
         #self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt",self.textData[0][1][Mystery.Framework.HorseRaingDataCode.jockey])
-        #self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt", html.text)
+        self.EasyFileIO.EasyOpenWrite("G:\\競馬AI\\TEST.txt", html.text)
 
         return 0
 

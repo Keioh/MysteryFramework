@@ -22,6 +22,18 @@ class HorseRacingDataMining:
         #HTMLを取得する
         webSiteFromHTML = requests.get(urlPath,headers=self.header, timeout=self.timeOut)
 
+        try:
+            #
+            webSiteFromHTML.raise_for_status()
+        except requests.exceptions.ConnectionError as connectionErr:
+
+            #接続エラー
+            print("Connecting Failed. : {connectionErr}")
+        except requests.exceptions.Timeout as timeOutErr:
+
+            #タイムアウトエラー
+            print("timeOut Error. : {timeOutErr}")
+        
         #文字化け対策
         webSiteFromHTML.encoding = webSiteFromHTML.apparent_encoding
 
