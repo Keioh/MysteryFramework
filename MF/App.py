@@ -11,7 +11,7 @@ class MysteryFramework(Mystery.Framework):
     #フレームワーク実行時に一回だけ最初に実行
     def Start(self):
         
-        self.MysteryThread.Create(4)
+        #self.MysteryThread.Create(4)
 
         #html = self.HourseRacingDataMining.GetWebSite(r"https://db.netkeiba.com/race/201406040806/")
         

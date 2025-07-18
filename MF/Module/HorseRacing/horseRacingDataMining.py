@@ -14,11 +14,13 @@ class HorseRacingDataMining:
         )
     }
 
+    timeOut = (3.0, 6.0)
+
     #urlPathで指定したサイトからHTMLを取得する
     def GetWebSite(self, urlPath):
 
         #HTMLを取得する
-        webSiteFromHTML = requests.get(urlPath,headers=self.header)
+        webSiteFromHTML = requests.get(urlPath,headers=self.header, timeout=self.timeOut)
 
         #文字化け対策
         webSiteFromHTML.encoding = webSiteFromHTML.apparent_encoding
